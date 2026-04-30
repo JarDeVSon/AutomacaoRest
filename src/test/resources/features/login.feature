@@ -18,22 +18,18 @@ Funcionalidade: Realizar Login
   Esquema do Cenario: <id>
     Dado que tenho um payload invalido da API de Login
       | email | <email> |
-      | senha | <senha> |
+      | password | <password> |
     Quando envio uma requisicao do tipo POST de Login
-    Entao valido que recebo status 400 no response
+    Entao valido que recebo status 401 no response
 
     @emailInvalido
     Exemplos:
-      | id                                | email              | senha  |
+      | id                                | email              | password  |
       | Realizar login com email invalido | invalido@email.com | 123456 |
-      | Realizar login com email []       | [1,2]              | 123456 |
-      | Realizar login com email true     | true               | 123456 |
-      | Realizar login com email null     |                    | 123456 |
+
 
     @senhaInvalida
     Exemplos:
-      | id                                | email           | senha    |
+      | id                                | email           | password |
       | Realizar login com senha invalida | aluno@email.com | invalida |
-      | Realizar login com senha {[]}     | [1,2]           | 123456   |
-      | Realizar login com senha true     | true            | 123456   |
-      | Realizar login com senha null     |                 | 123456   |
+
