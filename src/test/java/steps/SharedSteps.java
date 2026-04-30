@@ -1,8 +1,5 @@
 package steps;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import utils.RestUtils;
