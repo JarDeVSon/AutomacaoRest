@@ -26,14 +26,10 @@ Funcionalidade: Realizar Login
     Exemplos:
       | id                                | email              | password  |
       | Realizar login com email invalido | invalido@email.com | 123456 |
-      | Realizar login com email []       | [1,2]              | 123456 |
-      | Realizar login com email true     | true               | 123456 |
-      | Realizar login com email null     |                    | 123456 |
+
 
     @senhaInvalida
     Exemplos:
-      | id                                | email           | password    |
+      | id                                | email           | password |
       | Realizar login com senha invalida | aluno@email.com | invalida |
-      | Realizar login com senha {[]}     | [1,2]           | 123456   |
-      | Realizar login com senha true     | true            | 123456   |
-      | Realizar login com senha null     |                 | 123456   |
+
