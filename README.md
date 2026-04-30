@@ -21,7 +21,7 @@ mvn clean test && mvn cluecumber-report:reporting
 
 After execution, the report HTML will be generated in:
 
-target/report/index.html
+target/report/index.html(See in browser)
 ---
 
 ## Português
