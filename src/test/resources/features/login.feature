@@ -20,16 +20,16 @@ Funcionalidade: Realizar Login
       | email    | <email>    |
       | password | <password> |
     Quando envio uma requisicao do tipo POST de Login
-    Entao valido que recebo status 401 no response
+    Entao valido que recebo status no response
+      | status | <status> |
+    E valido que a mensagem de erro
+      | mensagem | <mensagem> |
 
-    @emailInvalido
+
     Exemplos:
-      | id                                | email              | password |
-      | Realizar login com email invalido | invalido@email.com | teste    |
+      | id                                | email              | password | status | mensagem                   |
+      | Realizar login com email invalido | invalido@email.com | teste    | 400    | Email e/ou senha inválidos |
+      | Realizar login com senha invalida | fulano@qa.com      | 12345    | 401    | Email e/ou senha inválidos |
 
 
-    @senhaInvalida
-    Exemplos:
-      | id                                | email         | password |
-      | Realizar login com senha invalida | fulano@qa.com | teste    |
 

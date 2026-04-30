@@ -2,6 +2,7 @@ package steps;
 
 
 import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import io.restassured.http.ContentType;
@@ -39,4 +40,13 @@ public class  LoginSteps {
     }
 
 
+    @E("valido que a mensagem de erro")
+    public void validoQueAMensagemDeErro(Map<String, Object> map) {
+        LoginMap.getLogin().putAll(map);
+    }
+
+    @Entao("valido que recebo status no response")
+    public void validoQueReceboStatusNoResponse(Map<String, Object> map) {
+        LoginMap.getLogin().putAll(map);
+    }
 }
