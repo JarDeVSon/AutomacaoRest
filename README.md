@@ -17,7 +17,11 @@ mvn clean install
 ```bash
 mvn clean test && mvn cluecumber-report:reporting
 ```
+📊 Visualizing the report
 
+After execution, the report HTML will be generated in:
+
+target/report/index.html
 ---
 
 ## Português
@@ -57,3 +61,9 @@ mvn clean install
 ```bash
 mvn clean test && mvn cluecumber-report:reporting
 ```
+
+### 📊 Visualizando o relatório
+
+Após a execução, o relatório HTML será gerado em:
+
+target/report/index.html
