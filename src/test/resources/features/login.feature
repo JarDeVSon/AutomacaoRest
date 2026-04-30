@@ -17,7 +17,7 @@ Funcionalidade: Realizar Login
   @payloadInvalido
   Esquema do Cenario: <id>
     Dado que tenho um payload invalido da API de Login
-      | email | <email> |
+      | email    | <email>    |
       | password | <password> |
     Quando envio uma requisicao do tipo POST de Login
     Entao valido que recebo status 401 no response
@@ -25,11 +25,11 @@ Funcionalidade: Realizar Login
     @emailInvalido
     Exemplos:
       | id                                | email              | password |
-      | Realizar login com email invalido | invalido@email.com | 123456 |
+      | Realizar login com email invalido | invalido@email.com | teste    |
 
 
     @senhaInvalida
     Exemplos:
-      | id                                | email           | password |
-      | Realizar login com senha invalida | aluno@email.com | invalida |
+      | id                                | email         | password |
+      | Realizar login com senha invalida | fulano@qa.com | teste    |
 
