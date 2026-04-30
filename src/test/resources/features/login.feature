@@ -20,7 +20,7 @@ Funcionalidade: Realizar Login
       | email | <email> |
       | password | <password> |
     Quando envio uma requisicao do tipo POST de Login
-    Entao valido que recebo status 400 no response
+    Entao valido que recebo status 401 no response
 
     @emailInvalido
     Exemplos:
