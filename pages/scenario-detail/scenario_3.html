@@ -79,16 +79,19 @@ font-src * data: blob: 'unsafe-inline';"/>
     "labels": [
       "que tenho um payload invalido da API de Login",
       "envio uma requisicao do tipo POST de Login",
-      "valido que recebo status 401 no response"
+      "valido que recebo status no response",
+      "valido que a mensagem de erro"
     ],
     "datasets": [
       {
         "data": [
           0,
           0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)"
@@ -100,9 +103,11 @@ font-src * data: blob: 'unsafe-inline';"/>
         "data": [
           0,
           0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)"
@@ -114,9 +119,11 @@ font-src * data: blob: 'unsafe-inline';"/>
         "data": [
           0,
           0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)"
@@ -250,7 +257,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2026-04-30 02:09:46</span>
+            <span class="text-light">2026-04-30 12:09:14</span>
         </div>
     </nav>
     <main role="main" class="container">
@@ -278,17 +285,15 @@ font-src * data: blob: 'unsafe-inline';"/>
         <div class="card h-100">
                 <div class="card-header">Scenario Info</div>
             <div class="card-body">
-                <li class="list-group-item">Started on:<br>2026-04-30 02:09:40</li>
-                <li class="list-group-item">Ended on:<br>2026-04-30 02:09:40</li>
-            <li class="list-group-item">Test Runtime:<br>0m 00s 098ms</li>
+                <li class="list-group-item">Started on:<br>2026-04-30 12:09:07</li>
+                <li class="list-group-item">Ended on:<br>2026-04-30 12:09:07</li>
+            <li class="list-group-item">Test Runtime:<br>0m 00s 123ms</li>
             <li class="list-group-item">
                     <a href="pages/tag-scenarios/tag_regressivo.html">@regressivo</a>,
 
                     <a href="pages/tag-scenarios/tag_login.html">@login</a>,
 
-                    <a href="pages/tag-scenarios/tag_payloadInvalido.html">@payloadInvalido</a>,
-
-                    <a href="pages/tag-scenarios/tag_senhaInvalida.html">@senhaInvalida</a>            </li>
+                    <a href="pages/tag-scenarios/tag_payloadInvalido.html">@payloadInvalido</a>            </li>
             </div>
         </div>
     </div>
@@ -298,11 +303,11 @@ font-src * data: blob: 'unsafe-inline';"/>
             <div class="card-body">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                    3         Steps
+                    4         Steps
 
                 </li>
                 <li class="list-group-item">
-                    3 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+                    4 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
 
                     <br>
@@ -351,11 +356,11 @@ font-src * data: blob: 'unsafe-inline';"/>
                                         <table class="table table-hover small table-striped text-left pb-0">
                                                 <tr>
                                                         <td>email</td>
-                                                        <td>aluno@email.com</td>
+                                                        <td>fulano@qa.com</td>
                                                 </tr>
                                                 <tr>
                                                         <td>password</td>
-                                                        <td>invalida</td>
+                                                        <td>12345</td>
                                                 </tr>
                                         </table>
                                     </div>
@@ -372,7 +377,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 098ms
+                                0m 00s 123ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -385,9 +390,9 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">3.</span>
-                                <span data-toggle="tooltip" title="steps.SharedSteps.validoQueReceboStatusNoResponse(int)">
-                                    <a href="pages/step-scenarios/step_1576048240.html"><span
-                                                class="keyword">Entao </span> valido que recebo status <span class="parameter">401</span> no response</a>
+                                <span data-toggle="tooltip" title="steps.LoginSteps.validoQueReceboStatusNoResponse(java.util.Map<java.lang.String, java.lang.Object>)">
+                                    <a href="pages/step-scenarios/step_01076484701.html"><span
+                                                class="keyword">Entao </span> valido que recebo status no response</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
@@ -398,6 +403,45 @@ font-src * data: blob: 'unsafe-inline';"/>
        title="passed"><span style="display:none">passed</span></i>
                             </div>
 
+                                <div class="row w-100 p-3 m-0 scenarioDataTable">
+                                    <div class="w-100 text-left border border-dark table-responsive">
+                                        <table class="table table-hover small table-striped text-left pb-0">
+                                                <tr>
+                                                        <td>status</td>
+                                                        <td>401</td>
+                                                </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                        </div>
+
+
+                        <div class="row row_passed table-row-passed">
+                            <div class="col-9 text-left">
+                                <span class="text-left">4.</span>
+                                <span data-toggle="tooltip" title="steps.LoginSteps.validoQueAMensagemDeErro(java.util.Map<java.lang.String, java.lang.Object>)">
+                                    <a href="pages/step-scenarios/step_903146444.html"><span
+                                                class="keyword">E </span> valido que a mensagem de erro</a>
+                                </span>
+                            </div>
+                            <div class="col-2 text-left small">
+                                0m 00s 000ms
+                            </div>
+                            <div class="col-1 text-right">
+    <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+       title="passed"><span style="display:none">passed</span></i>
+                            </div>
+
+                                <div class="row w-100 p-3 m-0 scenarioDataTable">
+                                    <div class="w-100 text-left border border-dark table-responsive">
+                                        <table class="table table-hover small table-striped text-left pb-0">
+                                                <tr>
+                                                        <td>mensagem</td>
+                                                        <td>Email e/ou senha inválidos</td>
+                                                </tr>
+                                        </table>
+                                    </div>
+                                </div>
                         </div>
                 </li>
             </div>
@@ -410,7 +454,7 @@ font-src * data: blob: 'unsafe-inline';"/>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.7.1 - Report generated on 2026-04-30 02:09:46.</span>
+        <span>Cluecumber Report Plugin version 2.7.1 - Report generated on 2026-04-30 12:09:14.</span>
     </div>
 </footer>    </body>
     </html>
