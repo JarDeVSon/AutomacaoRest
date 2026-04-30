@@ -24,7 +24,7 @@ Funcionalidade: Realizar Login
 
     @emailInvalido
     Exemplos:
-      | id                                | email              | password  |
+      | id                                | email              | password |
       | Realizar login com email invalido | invalido@email.com | 123456 |
 
 
